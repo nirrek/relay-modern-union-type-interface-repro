@@ -1,0 +1,17 @@
+interface I {
+  id: String!
+}
+
+type A implements I {
+  id: String!
+  uniqueToA: String!
+}
+
+type B implements I {
+  id: String!
+  uniqueToB: String!
+}
+
+type Query {
+  interface: I
+}
